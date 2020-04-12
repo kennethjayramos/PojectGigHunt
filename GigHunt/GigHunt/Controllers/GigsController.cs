@@ -20,6 +20,7 @@ namespace GigHunt.Controllers
         #endregion
 
         // POST: Gigs
+        [Authorize]
         public ActionResult Create()
         {
             var gigViewModel = new GigCreateFormViewModel
