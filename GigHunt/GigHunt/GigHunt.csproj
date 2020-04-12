@@ -177,9 +177,20 @@
     <Compile Include="Migrations\202004120639105_DefaultIdentityModels.Designer.cs">
       <DependentUpon>202004120639105_DefaultIdentityModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004120659192_AddedGigAndGenreModels.cs" />
+    <Compile Include="Migrations\202004120659192_AddedGigAndGenreModels.Designer.cs">
+      <DependentUpon>202004120659192_AddedGigAndGenreModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004120739037_OverrideCFConventionsForGigAndGenre.cs" />
+    <Compile Include="Migrations\202004120739037_OverrideCFConventionsForGigAndGenre.Designer.cs">
+      <DependentUpon>202004120739037_OverrideCFConventionsForGigAndGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -260,6 +271,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004120639105_DefaultIdentityModels.resx">
       <DependentUpon>202004120639105_DefaultIdentityModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004120659192_AddedGigAndGenreModels.resx">
+      <DependentUpon>202004120659192_AddedGigAndGenreModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004120739037_OverrideCFConventionsForGigAndGenre.resx">
+      <DependentUpon>202004120739037_OverrideCFConventionsForGigAndGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
