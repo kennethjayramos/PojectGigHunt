@@ -1,13 +1,33 @@
-﻿using System.Web.Mvc;
+﻿using GigHunt.Models;
+using GigHunt.ViewModels;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace GigHunt.Controllers
 {
     public class GigsController : Controller
     {
-        // GET: Gigs
+        // set ApplicationDbContext
+        private readonly ApplicationDbContext _dbContext;
+
+        #region Constructor
+
+        public GigsController()
+        {
+            _dbContext = new ApplicationDbContext();
+        }
+
+        #endregion
+
+        // POST: Gigs
         public ActionResult Create()
         {
-            return View();
+            var gigViewModel = new GigCreateFormViewModel
+            {
+                Genres = _dbContext.Genres.ToList()
+            };
+
+            return View(gigViewModel);
         }
     }
 }
