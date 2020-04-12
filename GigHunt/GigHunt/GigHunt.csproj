@@ -185,6 +185,10 @@
     <Compile Include="Migrations\202004120739037_OverrideCFConventionsForGigAndGenre.Designer.cs">
       <DependentUpon>202004120739037_OverrideCFConventionsForGigAndGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004120750296_SeedGenreTable.cs" />
+    <Compile Include="Migrations\202004120750296_SeedGenreTable.Designer.cs">
+      <DependentUpon>202004120750296_SeedGenreTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -277,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004120739037_OverrideCFConventionsForGigAndGenre.resx">
       <DependentUpon>202004120739037_OverrideCFConventionsForGigAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004120750296_SeedGenreTable.resx">
+      <DependentUpon>202004120750296_SeedGenreTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
