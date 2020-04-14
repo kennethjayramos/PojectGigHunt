@@ -34,6 +34,7 @@ namespace GigHunt.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create (GigCreateFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
