@@ -15,6 +15,7 @@ namespace GigHunt.ViewModels
         public string Date { get; set; }
 
         [Required]
+        [ValidateTime]
         public string Time { get; set; }
 
         [Required]
