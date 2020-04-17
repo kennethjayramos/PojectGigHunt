@@ -13,7 +13,7 @@ namespace GigHunt.ViewModels
         {
             DateTime dateTime;
 
-            var isValid = DateTime.TryParseExact(Convert.ToString(value), "MM d yyyy", CultureInfo.CurrentCulture, DateTimeStyles.None, out dateTime);
+            var isValid = DateTime.TryParseExact(Convert.ToString(value), "MM/d/yyyy", CultureInfo.CurrentCulture, DateTimeStyles.None, out dateTime);
 
             return (isValid && dateTime > DateTime.Now);
 
