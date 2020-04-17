@@ -19,7 +19,10 @@ namespace GigHunt.Controllers
 
         public ActionResult Index()
         {
-            var upComingGigs = _dbContext.Gigs.Include(gigs => gigs.Artist).Where(gigs => gigs.DateTime > DateTime.Now);
+            var upComingGigs = _dbContext.Gigs
+                .Include(gigs => gigs.Artist)
+                .Include(gigs => gigs.Genre)
+                .Where(gigs => gigs.DateTime > DateTime.Now);
 
             return View(upComingGigs);
         }
